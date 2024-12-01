@@ -2,6 +2,10 @@
 
 Flores Belas é uma floricultura que trabalha com entregas de flores e presentes. Nas datas especiais, há um acúmulo de encomendas e entregas e, para agilizar esse processo, será desenvolvido um software no ambiente Web. A sua missão será elaborar um modelo conceitual do banco de dados da floricultura.
 
+## Vídeo demonstrando a aplicação
+[Assista ao vídeo explicativo](https://www.youtube.com/watch?v=dQw4wLkJgXc)
+
+
 ---
 
 ## Diagramas
