@@ -4,14 +4,14 @@ Flores Belas é uma floricultura que trabalha com entregas de flores epresentes.
 
 ## Diagrama de classes
 ![Diagrama de Classes](https://github.com/carlosfernandescrypt/floricultura-swing/blob/main/imgs/diagrama_classes.png)
-![Diagrama de Classes](https://github.com/carlosfernandescrypt/floricultura-swing/blob/main/imgs/UML%20class.png)
 
 ## Diagrama de casos de uso
-![Diagrama de Casos de uso](https://github.com/carlosfernandescrypt/floricultura-swing/blob/main/imgs/diagrama_caso_de_uso.png)
+![Diagrama de Casos de uso](https://github.com/carlosfernandescrypt/floricultura-swing/blob/main/imgs/diagrama_casodeuso.jpg)
 
-# Modelos
+# Modelos do banco de dados
 
 ## Modelo Lógico
   ![Modelo Lógico](https://github.com/carlosfernandescrypt/floricultura-swing/blob/main/imgs/modelo_l%C3%B3gico)
-#
+## Modelo Conceitual
+  ![Modelo Conceitual](https://github.com/carlosfernandescrypt/floricultura-swing/blob/main/imgs/UML%20class(1).png)
 
