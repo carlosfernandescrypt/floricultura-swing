@@ -12,11 +12,9 @@ public class CadastroEncomenda {
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement stmtVerificar = conn.prepareStatement(sqlVerificarCliente)) {
 
-            // Verificar se o cliente existe
             stmtVerificar.setInt(1, encomenda.getCliente().getIdCliente());
             ResultSet rs = stmtVerificar.executeQuery();
             if (rs.next() && rs.getInt(1) > 0) {
-                // O cliente existe, podemos inserir a encomenda
                 String sql = "INSERT INTO encomendas (id_cliente, local_entrega) VALUES (?, ?)";
                 try (PreparedStatement stmt = conn.prepareStatement(sql)) {
                     stmt.setInt(1, encomenda.getCliente().getIdCliente());
