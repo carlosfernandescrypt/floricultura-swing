@@ -14,23 +14,15 @@ public class TelaPrincipal extends JFrame {
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-
-        // Layout
         setLayout(new FlowLayout());
-
-        // Botões
         JButton btnCadastrarCliente = new JButton("Cadastrar Cliente");
         JButton btnCadastrarProduto = new JButton("Cadastrar Produto");
         JButton btnCadastrarEncomenda = new JButton("Cadastrar Encomenda");
         JButton btnListar = new JButton("Listar Produtos, Encomendas e Clientes");
-
-        // Adicionando os botões à tela
         add(btnCadastrarCliente);
         add(btnCadastrarProduto);
         add(btnCadastrarEncomenda);
         add(btnListar);
-
-        // Ações dos botões
         btnCadastrarCliente.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String nome = JOptionPane.showInputDialog("Digite o nome do cliente:");
@@ -59,16 +51,11 @@ public class TelaPrincipal extends JFrame {
                 CadastroEncomenda.cadastrarEncomenda(encomenda);
             }
         });
-
-        // Exibir a listagem de dados
         btnListar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // Criando a tela de listagem
                 JDialog listagemDialog = new JDialog(TelaPrincipal.this, "Listagem de Clientes, Produtos e Encomendas", true);
                 listagemDialog.setLayout(new GridLayout(3, 1));
                 listagemDialog.setSize(600, 400);
-
-                // Tabela para listar Clientes
                 List<Cliente> clientes = ListarClientes.listarClientes();
                 String[] clienteColumns = {"ID", "Nome", "Endereço", "Telefone"};
                 DefaultTableModel clienteModel = new DefaultTableModel(clienteColumns, 0);
@@ -77,8 +64,6 @@ public class TelaPrincipal extends JFrame {
                 }
                 JTable clienteTable = new JTable(clienteModel);
                 listagemDialog.add(new JScrollPane(clienteTable));
-
-                // Tabela para listar Produtos
                 List<Produto> produtos = ListarProdutos.listarProdutos();
                 String[] produtoColumns = {"ID", "Tipo", "Preço"};
                 DefaultTableModel produtoModel = new DefaultTableModel(produtoColumns, 0);
@@ -87,8 +72,6 @@ public class TelaPrincipal extends JFrame {
                 }
                 JTable produtoTable = new JTable(produtoModel);
                 listagemDialog.add(new JScrollPane(produtoTable));
-
-                // Tabela para listar Encomendas
                 List<Encomenda> encomendas = ListarEncomendas.listarEncomendas();
                 String[] encomendaColumns = {"ID", "Cliente", "Local de Entrega"};
                 DefaultTableModel encomendaModel = new DefaultTableModel(encomendaColumns, 0);
