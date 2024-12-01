@@ -55,7 +55,7 @@ O sistema desenvolvido é uma aplicação Java para gerenciar clientes, produtos
   Contêm atributos para os dados correspondentes.
   Incluem construtores, getters e setters.
 
-###Cadastro de Dados
+### Cadastro de Dados
 
   CadastroCliente:
   Registra um cliente no banco de dados.
@@ -69,7 +69,7 @@ O sistema desenvolvido é uma aplicação Java para gerenciar clientes, produtos
   Verifica a existência do cliente pelo id_cliente.
   Caso exista, registra a encomenda na tabela encomendas.
 
-###Listagem de Dados
+### Listagem de Dados
 
   ListarClientes:
   Consulta todos os registros na tabela clientes.
@@ -83,40 +83,40 @@ O sistema desenvolvido é uma aplicação Java para gerenciar clientes, produtos
   Consulta os registros de encomendas relacionados a clientes.
   Cria objetos Encomenda associados a objetos Cliente.
 
-###TelaPrincipal
+### TelaPrincipal
   Exibe a interface gráfica da aplicação.
   Inclui botões para executar as funcionalidades de cadastro e listagem.
   Usa tabelas (JTable) para exibir os dados consultados.
 
-#Fluxo de Execução
+# Fluxo de Execução
 
 O usuário abre a aplicação via TelaPrincipal.
 
-  Escolhe uma das opções:
+  Escolhe uma das opções:<br>
     Cadastrar Cliente/Produto/Encomenda:
         Insere dados via caixas de diálogo.
         Os dados são enviados para o banco de dados por meio das classes de cadastro.
     Listar Dados:
         Abre uma nova janela com tabelas exibindo os registros existentes no banco.
 
-    A interação com o banco de dados é feita através de JDBC.
+  A interação com o banco de dados é feita através de JDBC.
 
 # Estrutura do Banco de Dados
 
 Tabela clientes:
-    id_cliente (INT, PK)
-    nome (VARCHAR)
-    endereco (VARCHAR)
-    telefone (VARCHAR)
+id_cliente (INT, PK)
+nome (VARCHAR)
+endereco (VARCHAR)
+telefone (VARCHAR)
 
 Tabela produtos:
-    id_produto (INT, PK)
-    tipo (VARCHAR)
-    preco (DOUBLE)
+id_produto (INT, PK)
+tipo (VARCHAR)
+preco (DOUBLE)
 
 Tabela encomendas:
-    id_encomenda (INT, PK)
-    id_cliente (INT, FK para clientes)
-    local_entrega (VARCHAR)
+id_encomenda (INT, PK)
+id_cliente (INT, FK para clientes)
+local_entrega (VARCHAR)
   
 
