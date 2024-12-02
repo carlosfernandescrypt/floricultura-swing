@@ -3,7 +3,7 @@
 Flores Belas é uma floricultura que trabalha com entregas de flores e presentes. Nas datas especiais, há um acúmulo de encomendas e entregas e, para agilizar esse processo, será desenvolvido um software no ambiente Web. A sua missão será elaborar um modelo conceitual do banco de dados da floricultura.
 
 ## Vídeo demonstrando a aplicação
-[![Aplicação de gerenciamento de floricultura utilizando Java e Swing](https://img.youtube.com/vi/DxhtRmpmJfA/0.jpg)](https://www.youtube.com/watch?v=DxhtRmpmJfA)
+[![Aplicação de gerenciamento de floricultura utilizando Java e Swing](https://github.com/carlosfernandescrypt/floricultura-swing/blob/main/imgs/Captura%20de%20tela%202024-11-30%20210513.png)](https://www.youtube.com/watch?v=DxhtRmpmJfA)
 
 
 ---
